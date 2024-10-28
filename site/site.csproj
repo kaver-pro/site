@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\Kaver.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Temp\Temp.cshtml" />
+    <Content Remove="wwwroot\Contents\docs\KAVer_Set_Example.docx" />
+    <Content Remove="wwwroot\Contents\docs\KAVer_Set_Full_03_2018.docx" />
+    <Content Remove="wwwroot\Contents\docs\KAVer_TechRider_General.docx" />
+    <Content Remove="wwwroot\External\bootstrap\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\External\bootstrap\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\External\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\External\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\External\bootstrap\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\External\bootstrap\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\External\font-awesome\css\font-awesome.css.map" />
+    <Content Remove="wwwroot\External\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\External\jquery\jquery.min.map" />
+    <Content Remove="wwwroot\External\jquery\jquery.slim.min.map" />
+    <Content Remove="wwwroot\External\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Remove="Views\Web.config" />
+    <Content Remove="Pages\Shared\Error.cshtml" />
+    <Content Remove="Views\Shared\_ViewImports.cshtml" />
+    <Content Remove="wwwroot\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\Contents\" />
+    <Folder Include="wwwroot\External\" />
+    <Folder Include="wwwroot\Scripts\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\Portfolio\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="server\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Contents\docs\KAVer_Set_Example.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\Contents\docs\KAVer_Set_Full_03_2018.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\Contents\docs\KAVer_TechRider_General.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\External\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\External\bootstrap\css\bootstrap.min.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\External\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\External\bootstrap\js\bootstrap.bundle.min.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\External\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\External\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\External\font-awesome\css\font-awesome.css.map" />
+    <None Include="wwwroot\External\font-awesome\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\External\jquery\jquery.min.map" />
+    <None Include="wwwroot\External\jquery\jquery.slim.min.map" />
+    <None Include="wwwroot\External\simple-line-icons\fonts\Simple-Line-Icons.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Error.cshtml.cs" />
+  </ItemGroup>
+</Project>

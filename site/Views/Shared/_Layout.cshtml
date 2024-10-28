@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – KAVёr</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/External/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="~/External/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="~/External/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/Contents/Kaver.css" rel="stylesheet">
+
+    <link href="~/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body id="page-top">
+    @RenderBody()
+
+    <!-- Footer -->
+    <footer id="contacts" class="footer text-center">
+        <div class="container">
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://web.facebook.com/kaver.msk/">
+                        <i class="icon-social-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/kaver.msk/">
+                        <i class="icon-social-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://vk.com/kaverpro">
+                        <i class="icon-social-vkontakte"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="https://www.youtube.com/channel/UCoShgTLmTq8EZl-5_Ldym8w">
+                        <i class="icon-social-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <footer class="py-5 bg-kaver">
+        <div class="container">
+            <p class="m-0 text-center text-white small">Copyright &copy; KAVёr @DateTime.Now.Year</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/External/jquery/jquery.min.js"></script>
+    <script src="~/External/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="~/External/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="~/Scripts/Kaver.js"></script>
+</body>
+</html>
