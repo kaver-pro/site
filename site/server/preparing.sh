@@ -18,9 +18,13 @@ sudo nano /etc/httpd/conf.d/kaver.conf
 
 sudo nano /etc/systemd/system/kestrel-kaver.service
 sudo systemctl daemon-reload
+sudo systemctl enable kestrel-kaver.service
 sudo systemctl start kestrel-kaver.service
+sudo systemctl status kestrel-kaver.service
 sudo journalctl -fu kestrel-kaver.service
 
+sudo systemctl enable httpd
 sudo systemctl restart httpd
+sudo systemctl status httpd
 
 #see how to get https: https://reintech.io/blog/install-configure-lets-encrypt-ssl-centos-9
