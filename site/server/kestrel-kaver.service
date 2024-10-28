@@ -3,7 +3,7 @@ Description=Kaver .NET Web API App running on CentOS
 
 [Service]
 WorkingDirectory=/var/www/kaver/
-ExecStart=/usr/share/dotnet/dotnet /var/www/kaver/site.dll
+ExecStart=dotnet /var/www/kaver/site.dll
 Restart=always
 # Restart service after 60 seconds if the dotnet service crashes:
 RestartSec=60

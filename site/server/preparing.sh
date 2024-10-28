@@ -1,5 +1,5 @@
 ﻿sudo mkdir /kaver/ && cd /kaver/
-git clone https://github.com/dimonstrik/kaver.git
+git clone https://github.com/kaver-pro/site.git
 
 sudo yum install -y epel-release
 sudo yum install -y wget
@@ -22,3 +22,5 @@ sudo systemctl start kestrel-kaver.service
 sudo journalctl -fu kestrel-kaver.service
 
 sudo systemctl restart httpd
+
+#see how to get https: https://reintech.io/blog/install-configure-lets-encrypt-ssl-centos-9
